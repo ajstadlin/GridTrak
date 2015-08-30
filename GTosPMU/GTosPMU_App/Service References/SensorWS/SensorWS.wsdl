@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.gridtrak.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.gridtrak.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.gridtrak.com/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sensor_New">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iAccountID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAccountEMail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAccountPswd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dsSensor">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sensor_NewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Sensor_NewResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_SensorList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iAccountID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAccountEMail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAccountPswd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_SensorListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_SensorListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="Sensor_NewSoapIn">
+    <wsdl:part name="parameters" element="tns:Sensor_New" />
+  </wsdl:message>
+  <wsdl:message name="Sensor_NewSoapOut">
+    <wsdl:part name="parameters" element="tns:Sensor_NewResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_SensorListSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_SensorList" />
+  </wsdl:message>
+  <wsdl:message name="Get_SensorListSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_SensorListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SensorWSSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sensor_New">
+      <wsdl:input message="tns:Sensor_NewSoapIn" />
+      <wsdl:output message="tns:Sensor_NewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_SensorList">
+      <wsdl:input message="tns:Get_SensorListSoapIn" />
+      <wsdl:output message="tns:Get_SensorListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SensorWSSoap" type="tns:SensorWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://www.gridtrak.com/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sensor_New">
+      <soap:operation soapAction="http://www.gridtrak.com/Sensor_New" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_SensorList">
+      <soap:operation soapAction="http://www.gridtrak.com/Get_SensorList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SensorWSSoap12" type="tns:SensorWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://www.gridtrak.com/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sensor_New">
+      <soap12:operation soapAction="http://www.gridtrak.com/Sensor_New" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_SensorList">
+      <soap12:operation soapAction="http://www.gridtrak.com/Get_SensorList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SensorWS">
+    <wsdl:port name="SensorWSSoap" binding="tns:SensorWSSoap">
+      <soap:address location="http://www.gridtrak.com/ws/SensorWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SensorWSSoap12" binding="tns:SensorWSSoap12">
+      <soap12:address location="http://www.gridtrak.com/ws/SensorWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
