@@ -1,23 +1,22 @@
 # Open Source SynchroPhasor PMU Project
 #### Project Description
-The Open Source SynchroPhasor PMUs Project provides resources that enable you to build your own SynchroPhasor measuring sensors for use with the openPDC project, research, development, or electric grid observation.
-
-* Open source resources enabling you to construct your own PMU for research, experimentation, development, or fun. The information provided here is intended to be reproducible, repeatable, and reusable in your own projects.
-* The open source resources hosted here can be used with the openPDC - Open Source Phasor Data Concentrator project software.
-* **If you have an open source PMU, please let us know so we can include a description and links to your project.**
+The Open Source SynchroPhasor PMU Project provides resources that enable you to construct your own SynchroPhasor PMU sensor.  The resources in this project are intended to be open source, reproducible, repeatable, and reusable in your own projects.
+* Open Source PMU sensors can be used with the openPDC - the Open Source Phasor Data Concentrator project software.
 
 ## GridTrak Open Source PMU (GTosPMU)
-### How GridTrak Open Source PMU (GTosPMU) Works:
-The GridTrak PMU is a hardware sensor designed to measure and transmit AC SynchroPhasor Frequency, Phase Angle, and Magnitude digitally by:
+The *GridTrak* Open Source PMU or *GTosPMU* is a specific implementation of an Open Source SynchroPhasor PMU created using the resources hosted in this project.
 
-* Converts the AC signal to complimentary square waves using a operatonal amplifier and precision voltage reference
-* Uses a precision timer to measure square wave cycle (Frequency) and offset from a PPS time reference (Phase angle)
-* Calculates Magnitude for the ideal sine wave of the signal
+### How the GridTrak Open Source PMU (GTosPMU) Works
+The GridTrak PMU is a hardware sensor designed to measure and transmit AC SynchroPhasor Frequency, Phase Angle, and Magnitude digitally using the following technology:
+
+* Converts the AC signal to complimentary square waves using an operatonal amplifier and precision voltage reference
+* Uses a precision timer to measure the Frequency of square wave cycles and Phase Angle from a Pulse per Second (PPS) time reference
+* Calculates the Voltage Magnitude for the ideal sine wave of the signal
 * Optionally uses GPS for precision PPS triggering and SynchroPhasor measurement values
 * Transmits Data per IEEE C37.118-2005 specifications or in plain text
-* Compatible with openPDC for extended application and systems development
+* Compatible with openPDC and PMUConnectionTester for extended application and systems development
 
-The GridTrak concept filters out the original wave form, harmonics, and distortion by the square wave conversion of the analog input signal to a digital signal. If you need to measure or observe wave form distortion or harmonics, this is not the PMU for the job.
+The GridTrak PMU's square wave conversion of the analog input signal to a digital signal filters out the original wave form, harmonics, and distortion.  If you need to measure or observe wave form distortion or harmonics, you need a different PMU.
 
 Description | Photo |
 ----- | ----- |
