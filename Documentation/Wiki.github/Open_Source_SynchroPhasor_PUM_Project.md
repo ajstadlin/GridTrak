@@ -19,29 +19,7 @@ The GridTrak PMU is a hardware sensor designed to measure and transmit AC Synchr
 
 The GridTrak concept filters out the original wave form, harmonics, and distortion by the square wave conversion of the analog input signal to a digital signal. If you need to measure or observe wave form distortion or harmonics, this is not the PMU for the job.
 
-<table style="width: 100%;">
-<tbody>
-<tr>
-<td style="width: 40%;">
-<p><strong>Photo - </strong><strong>GridTrak Model A, Rev 9.5 kit</strong></p>
-<p><strong>Operational&nbsp;Open Source SynchroPhasor PMU with GPS Integration.</strong></p>
-<p>&nbsp;</p>
-</td>
-<td style="width: 60%;"><strong><img src="http://download.codeplex.com/Download?ProjectName=gridtrak&amp;DownloadId=361556" alt="" width="449" /></strong></td>
-</tr>
-<tr>
-<td style="width: 40%;">
-<p><strong>&nbsp;</strong></p>
-</td>
-<td style="width: 60%;">&nbsp;</td>
-</tr>
-<tr>
-<td style="width: 40%;">
-<p><strong>Photo - Testing a GridTrak Model A PMU with Garmin GPS 15xL-W.&nbsp; </strong></p>
-<p><strong>A bypass capacitor (upper right)&nbsp;is added to the PPS to reduce transient false signals.</strong></p>
-<p><strong>Two serial port connections are shown.&nbsp;&nbsp;A completed&nbsp;Model A PMU will only require 1 serial port connection for operation, however, the second serial port remains available for direct PC to GPS connection for development and diagnostics.&nbsp; </strong></p>
-</td>
-<td style="width: 60%;"><img src="http://download.codeplex.com/Download?ProjectName=gridtrak&amp;DownloadId=294840" alt="" width="449" height="276" /></td>
-</tr>
-</tbody>
-</table>
+Description | Photo |
+----- | ----- |
+**Photo - GridTrak Model A, Rev 9.5 kit**<br /> **Operational Open Source SynchroPhasor PMU with GPS Integration.** | <img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/Wiki.github/Open_Source_SynchroPhasor_PUM_Project/GridTrak_PMU_Mod_A_9-7_web.jpg" alt="" width="449" /> |
+  |   |
