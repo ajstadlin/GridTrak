@@ -160,7 +160,8 @@
 
 <hr />
 <div class="footer">
-Last edited <span class="smartDate" title="3/2/2011 5:00:05 AM" LocalTimeTicks="1299070805">Mar 2, 2011 at 5:00 AM</span> by <a id="wikiEditByLink" href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a>, version 11<br />
+Revised Nov 1, 2015 at 11:00 AM (UTC-5) by <a id="wikiEditByLink" href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a> - Information in the GridTrak project regarding the <i>other</i> <a href="http://openpmu.sourceforge.net/">OpenPMU Project</a> is now deprecated.  Artifacts related to that project found here remain for archival reference only.<br />
+Last CodePlex edit <span class="smartDate" title="3/2/2011 5:00:05 AM" LocalTimeTicks="1299070805">Mar 2, 2011 at 5:00 AM</span> by <a id="wikiEditByLink" href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a>, version 11<br />
 <!--HtmlToGmd.Migration-->Migrated from <a href="http://gtospmu.codeplex.com/wikipage?title=Open%20Source%20PMU%20Comparison">CodePlex</a> Oct 31, 2015 by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajs</a><!--/HtmlToGmd.Migration-->
 </div>
 
@@ -170,6 +171,5 @@ Last edited <span class="smartDate" title="3/2/2011 5:00:05 AM" LocalTimeTicks="
 Copyright 2015 <a href="http://www.gridtrak.com">GridTrak</a>
 </div>
 <!--/HtmlToGmd.Foot-->
-
 </body>
 </html>

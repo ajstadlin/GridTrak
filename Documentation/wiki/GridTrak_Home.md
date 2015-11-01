@@ -19,13 +19,12 @@
 <div class="WikiContent">
 <div class="wikidoc">
 <p><strong>Project Description</strong> <br>
-The Open Source SynchroPhasor PMUs Project provides resources that enable you to build your own SynchroPhasor measuring sensors for use with the openPDC project, research, development, or electric grid observation.</p>
+The Open Source SynchroPhasor PMU Project provides resources that enable you to build your own SynchroPhasor measuring sensors for use with the openPDC project, research, development, or electric grid observation.</p>
 <h1>Open Source SynchroPhasor PMU Project</h1>
 <ul>
-<li>Open source resources enabling you to construct your own PMU for research, experimentation, development, or fun. The information provided here is intended to be reproducible, repeatable, and reusable in your own projects.
+<li>Open source resources enable you to construct your own PMU for research, experimentation, development, or fun. The information provided here is intended to be reproducible, repeatable, and reusable in your own projects.
 </li><li>The open source resources hosted here can be used with the openPDC - Open Source Phasor Data Concentrator project software.
-</li><li><strong>If you have an open source PMU, please let us know so we can include a description and links to your project.
-</strong></li></ul>
+</li></ul>
 <hr>
 <h1>GridTrak - <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Open_Source_PMU_-GTosPMU-.md">Open Source PMU (GTosPMU)</a></h1>
 <h3>How GridTrak Open Source PMU (GTosPMU) Works:</h3>
@@ -65,12 +64,12 @@ The Open Source SynchroPhasor PMUs Project provides resources that enable you to
 </tr>
 </tbody>
 </table>
-<hr>
-<h2><a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Open_Source_PMU_Comparison.md">Open Source PMUs Compared</a></h2>
-</div></div>
+</div>
+</div>
 <hr />
 <div class="footer">
-Last edited <span class="smartDate" title="4/25/2012 3:57:56 AM" LocalTimeTicks="1335351476">Apr 25, 2012 at 3:57 AM</span> by <a id="wikiEditByLink" href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a>, version 46<br />
+Revised Nov 1, 2015 at 11:00 AM (UTC-5) by <a id="wikiEditByLink" href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a> - Information in the GridTrak project regarding the <i>other</i> <a href="http://openpmu.sourceforge.net/">OpenPMU Project</a> is now deprecated.  Artifacts related to that project found here remain for archival reference only.<br />
+Last CodePlex edit <span class="smartDate" title="4/25/2012 3:57:56 AM" LocalTimeTicks="1335351476">Apr 25, 2012 at 3:57 AM</span> by <a id="wikiEditByLink" href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a>, version 46<br />
 <!--HtmlToGmd.Migration-->Migrated from <a href="http://gridtrak.codeplex.com">CodePlex</a> Oct 30, 2015 by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajs</a><!--/HtmlToGmd.Migration-->
 </div>
 <!--HtmlToGmd.Foot-->
