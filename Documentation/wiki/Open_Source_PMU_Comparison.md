@@ -1,6 +1,4 @@
 <html lang="en">
-<head>
-</head>
 <body>
 <!--HtmlToGmd.Body-->
 <div id="NavigationMenu">
@@ -18,8 +16,7 @@
 </div>
 <hr />
 <!--/HtmlToGmd.Body-->
-<div class="WikiContent">
-<div class="wikidoc">
+
 <h1>Open Source PMU Comparison Chart</h1>
 <table border="0" align="left" style="width:100%">
 <tbody>
@@ -160,13 +157,11 @@
 </tr>
 </tbody>
 </table>
-</div>
-</div>
 
-<div class="footer">
 <hr />
+<div class="footer">
 Last edited <span class="smartDate" title="3/2/2011 5:00:05 AM" LocalTimeTicks="1299070805">Mar 2, 2011 at 5:00 AM</span> by <a id="wikiEditByLink" href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a>, version 11<br />
-<!--HtmlToGmd.Migration-->Migrated from <a href="http://gtospmu.codeplex.com/wikipage?title=Open%20Source%20PMU%20Comparison">CodePlex</a> Oct 30, 2015 by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajs</a><!--/HtmlToGmd.Migration-->
+<!--HtmlToGmd.Migration-->Migrated from <a href="http://gtospmu.codeplex.com/wikipage?title=Open%20Source%20PMU%20Comparison">CodePlex</a> Oct 31, 2015 by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajs</a><!--/HtmlToGmd.Migration-->
 </div>
 
 <!--HtmlToGmd.Foot-->
@@ -175,5 +170,6 @@ Last edited <span class="smartDate" title="3/2/2011 5:00:05 AM" LocalTimeTicks="
 Copyright 2015 <a href="http://www.gridtrak.com">GridTrak</a>
 </div>
 <!--/HtmlToGmd.Foot-->
+
 </body>
 </html>

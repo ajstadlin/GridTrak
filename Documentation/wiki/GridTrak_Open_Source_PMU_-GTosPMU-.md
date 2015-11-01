@@ -94,12 +94,12 @@ GTosPMU performance specification has been reduced from maximum 60 to 30 samples
 </div>
 The licensing for the GridTrak Open Source SynchroPhasor PMU &#40;GTosPMU&#41; design, firmware, and software is changed to the CodePlex New BSD License for simplification.  The GTosPMU application software may include dependencies and refer to the TVA Code Library and IEEE C37.118-2005 specification for which their own licensing and copyrights apply.<p></p>
 </div>
-
+    
 </div>
 <hr />
 <div class="footer">
 Last edited <span class="smartDate" title="4/25/2012 4:02:48 AM" LocalTimeTicks="1335351768">Apr 25, 2012 at 4:02 AM</span> by <a id="wikiEditByLink" href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a>, version 20<br />
-<!--HtmlToGmd.Migration-->Migrated from <a href="http://gridtrak.codeplex.com/wikipage?title=GridTrak%20Open%20Source%20PMU%20%28GTosPMU%29">CodePlex</a> Oct 31, 2015 by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajs</a><!--/HtmlToGmd.Migration-->
+<!--HtmlToGmd.Migration-->Migrated from <a href="http://gridtrak.codeplex.com/wikipage?title=GridTrak%20Open%20Source%20PMU%20%28GTosPMU%29&referringTitle=Home">CodePlex</a> Oct 31, 2015 by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajs</a><!--/HtmlToGmd.Migration-->
 </div>
 
 <!--HtmlToGmd.Foot-->
@@ -108,5 +108,6 @@ Last edited <span class="smartDate" title="4/25/2012 4:02:48 AM" LocalTimeTicks=
 Copyright 2015 <a href="http://www.gridtrak.com">GridTrak</a>
 </div>
 <!--/HtmlToGmd.Foot-->
+
 </body>
 </html>
