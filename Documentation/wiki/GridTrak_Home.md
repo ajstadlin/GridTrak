@@ -66,15 +66,6 @@ The Open Source SynchroPhasor PMUs Project provides resources that enable you to
 </tbody>
 </table>
 <hr>
-<h1>OpenPMU - <a href="http://www.openpmu.org">www.openpmu.org</a>&nbsp; and&nbsp;
-<a href="http://openpmu.codeplex.com">OpenPMU on CodePlex</a></h1>
-<h3>How OpenPMU works:</h3>
-<p>OpenPMU is essentially hardware agnostic, being able to acquire waveform data via:</p>
-<ul>
-<li>National Instruments NI-DAQ </li><li>Soundcards </li><li>Netduino GPS Disciplined Ethernet DAQ </li></ul>
-<p>The waveform sample data is read by PC in the Python development environment.&nbsp; Python provides a library of functions and tools similar to MATLAB.&nbsp; The estimated Synchrophasors can then be transmitted onwards in either plain text or IEEE C37.118
- format.&nbsp; Synchrophasors can be stored in a historian system, e.g. Pi Server.</p>
-<hr>
 <h2><a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Open_Source_PMU_Comparison.md">Open Source PMUs Compared</a></h2>
 </div></div>
 <hr />
