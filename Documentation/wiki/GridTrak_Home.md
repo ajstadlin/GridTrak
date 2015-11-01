@@ -1,6 +1,4 @@
 <html lang="en">
-<head>
-</head>
 <body>
 <!--HtmlToGmd.Body-->
 <div id="NavigationMenu">
@@ -19,60 +17,8 @@
 <hr />
 <!--/HtmlToGmd.Body-->
 
-<!--HtmlToGmd.Body-->
-<div id="NavigationMenu">
-<h1><a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Home.md">
-<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Logo.png" alt="Open Source SynchroPhasor PMU" /></a></h1>
-<hr />
-<table style="width: 100%; border-collapse: collapse; border: 0px solid gray;">
-<tr>
-<td style="width: 25%; text-align:center;"><b><a href="http://www.gridtrak.com">GridTrak</a></b></td>
-<td style="width: 25%; text-align:center;"><b><a href="https://github.com/ajstadlin/GridTrak">GridTrak on GitHub</a></b></td>
-<td style="width: 25%; text-align:center;"><b><a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Home.md">GridTrak Wiki Home</a></b></td>
-<td style="width: 25%; text-align:center;"><b><a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Documentation_Home.md">Documentation</a></b></td>
-</tr>
-</table>
-</div>
-<hr />
-<!--/HtmlToGmd.Body-->
-
-<!--HtmlToGmd.Body-->
-<div id="NavigationMenu">
-<h1><a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Home.md">
-<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Logo.png" alt="Open Source SynchroPhasor PMU" /></a></h1>
-<hr />
-<table style="width: 100%; border-collapse: collapse; border: 0px solid gray;">
-<tr>
-<td style="width: 25%; text-align:center;"><b><a href="http://www.gridtrak.com">GridTrak</a></b></td>
-<td style="width: 25%; text-align:center;"><b><a href="https://github.com/ajstadlin/GridTrak">GridTrak on GitHub</a></b></td>
-<td style="width: 25%; text-align:center;"><b><a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Home.md">GridTrak Wiki Home</a></b></td>
-<td style="width: 25%; text-align:center;"><b><a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Documentation_Home.md">Documentation</a></b></td>
-</tr>
-</table>
-</div>
-<hr />
-<!--/HtmlToGmd.Body-->
-
-<!--HtmlToGmd.Body-->
-<div id="NavigationMenu">
-<h1><a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Home.md">
-<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Logo.png" alt="Open Source SynchroPhasor PMU" /></a></h1>
-<hr />
-<table style="width: 100%; border-collapse: collapse; border: 0px solid gray;">
-<tr>
-<td style="width: 25%; text-align:center;"><b><a href="http://www.gridtrak.com">GridTrak</a></b></td>
-<td style="width: 25%; text-align:center;"><b><a href="https://github.com/ajstadlin/GridTrak">GridTrak on GitHub</a></b></td>
-<td style="width: 25%; text-align:center;"><b><a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Home.md">GridTrak Wiki Home</a></b></td>
-<td style="width: 25%; text-align:center;"><b><a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Documentation_Home.md">Documentation</a></b></td>
-</tr>
-</table>
-</div>
-<hr />
-<!--/HtmlToGmd.Body-->
 
 <div class="WikiContent">
-
-                
 <div class="wikidoc">
 <p><strong>Project Description</strong> <br>
 The Open Source SynchroPhasor PMUs Project provides resources that enable you to build your own SynchroPhasor measuring sensors for use with the openPDC project, research, development, or electric grid observation.</p>
@@ -84,7 +30,7 @@ The Open Source SynchroPhasor PMUs Project provides resources that enable you to
 </strong></li></ul>
 <h1>
 <hr>
-GridTrak - <a href="/wikipage?title=GridTrak%20Open%20Source%20PMU%20%28GTosPMU%29&referringTitle=Home">
+GridTrak - <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Open_Source_PMU_-GTosPMU-.md">
 Open Source PMU (GTosPMU)</a></h1>
 <h3>How GridTrak Open Source PMU (GTosPMU) Works:</h3>
 <p>The GridTrak PMU is a hardware sensor designed to measure and transmit AC SynchroPhasor Frequency, Phase Angle, and Magnitude digitally by:</p>
@@ -135,9 +81,6 @@ Open Source PMU (GTosPMU)</a></h1>
 <hr>
 <h2><a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Open_Source_PMU_Comparison.md">Open Source PMUs Compared</a></h2>
 </div>
-<div></div>
-
-            
 </div>
 
 <hr />
@@ -152,8 +95,5 @@ Last edited <span class="smartDate" title="4/25/2012 3:57:56 AM" LocalTimeTicks=
 Copyright 2015 <a href="http://www.gridtrak.com">GridTrak</a>
 </div>
 <!--/HtmlToGmd.Foot-->
-
-
-
 </body>
 </html>
