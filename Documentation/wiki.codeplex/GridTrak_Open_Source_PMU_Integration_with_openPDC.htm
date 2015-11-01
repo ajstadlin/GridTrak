@@ -1,0 +1,769 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
+    
+    
+    
+    
+
+    
+    <head>
+        <meta id="CompatabilityMode" http-equiv="X-UA-Compatible" content="IE=edge" />
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="http://download-codeplex.sec.s-msft.com/css/v21031/i2036743/StyleSheet.ashx" id="MasterCss" rel="stylesheet" type="text/css" />
+        <link rel="SHORTCUT ICON" href="http://www.codeplex.com/favicon.ico" />
+        <title>Open Source SynchroPhasor PMU - Documentation</title>
+        
+        <!--
+        Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code,
+        not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.
+        -->
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.4.4.min.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            if (typeof jQuery === 'undefined') {
+                document.write(unescape("%3Cscript src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.6/jquery-ui.min.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            if (typeof jQuery.ui === 'undefined') {
+                document.write(unescape("%3Cscript src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js' type='text/javascript'%3E%3C/script%3E"));
+            }
+        </script>
+
+        
+            <script type="text/javascript">
+                var appInsights=window.appInsights||function(config){
+                    function s(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},r=document,f=window,e="script",o=r.createElement(e),i,u;for(o.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",r.getElementsByTagName(e)[0].parentNode.appendChild(o),t.cookie=r.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)s("track"+i.pop());return config.disableExceptionTracking||(i="onerror",s("_"+i),u=f[i],f[i]=function(config,r,f,e,o){var s=u&&u(config,r,f,e,o);return s!==!0&&t["_"+i](config,r,f,e,o),s}),t
+                }({
+                    instrumentationKey:"3a5c29be-06e6-465e-862f-c10a5d93d3a2"
+                });
+    
+                window.appInsights=appInsights;
+                appInsights.trackPageView();
+            </script>
+        
+    <style type="text/css">.SideBar, .SideBarPadding{display:none;}.MainContent{width:auto;}.SiteContentTable{width:100%;}</style>
+    <style id="ProjectStyles" type="text/css">
+        .SiteHeader, .SiteHeaderLeft {
+            height:45px !important;
+            overflow:hidden;
+        }
+        .SiteContent 
+        {
+            padding: 0 0 1em 0;
+            margin-top:0;
+            min-height:225px;
+            border-right: 1px solid lightgrey;
+            border-left: 1px solid lightgrey;
+            border-bottom: 1px solid lightgrey;
+        }
+        .IE table.MinWidthContent
+        {
+	        table-layout: auto !important;	
+        }
+    </style>
+    
+    
+    <style type="text/css">.ProjectContent{padding:0;}</style>
+    <style type="text/css">
+        .WikiHolder
+        {
+            margin: 0 1em 0 0;
+        }
+        #WikiContent
+        {
+            margin-top: 15px;
+        }
+        #WikiBreadCrumbs
+        {
+            margin: 0.25em 0 1em 0;
+        }
+        .SecondarySearchButton 
+        {
+            margin:0 0 0 -0.6em;
+        }
+        .FF .SecondarySearchButton 
+        {
+            margin:-0.1em 0 0 -0.5em;
+            height: 22px;
+        }
+        .IE .SecondarySearchButton
+        {
+            width: 22px;
+            height: 22px;
+        }
+    </style>
+    
+    
+        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    
+    
+    
+    <meta id="WTProjectName" name="WT.pi" content="gtospmu"/>
+    
+
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href='http://gridtrak.codeplex.com/rsd' />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" title="WLWManifest" href='/wlwmanifest.xml' />
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="Open&#32;Source&#32;SynchroPhasor&#32;PMU" url="http://gridtrak.codeplex.com/project/feeds/rss"/>
+    
+        
+        <link rel="alternate" type="application/rss+xml" title="Open&#32;Source&#32;SynchroPhasor&#32;PMU&#32;-&#32;Discussions" url="http://gridtrak.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fforum%2fgridtrak"/>
+        
+        <link rel="alternate" type="application/rss+xml" title="Open&#32;Source&#32;SynchroPhasor&#32;PMU&#32;-&#32;Issues" url="http://gridtrak.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fworkitem%2fgridtrak"/>
+        
+        <link rel="alternate" type="application/rss+xml" title="Open&#32;Source&#32;SynchroPhasor&#32;PMU&#32;-&#32;Downloads" url="http://gridtrak.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2frelease%2fgridtrak"/>
+        <link rel="alternate" type="application/rss+xml" title="Open&#32;Source&#32;SynchroPhasor&#32;PMU&#32;-&#32;Reviews" url="http://gridtrak.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2freview%2fgridtrak"/>
+        
+    
+        <link rel="alternate" type="application/rss+xml" title="Open&#32;Source&#32;SynchroPhasor&#32;PMU&#32;-&#32;Source&#32;code" url="http://gridtrak.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fsourcecontrol%2fgridtrak"/>
+        <link rel="alternate" type="application/rss+xml" title="Open&#32;Source&#32;SynchroPhasor&#32;PMU&#32;-&#32;Wiki" url="http://gridtrak.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fwiki%2fgridtrak"/>
+    
+        
+    
+        <meta content="summary" name="twitter:card" /><meta content="@CodePlex" name="twitter:site" /><meta content="http://gridtrak.codeplex.com/wikipage?title= GridTrak Open Source PMU Integration with openPDC&amp;ProjectName=gridtrak" name="twitter:url" /><meta content="Open Source SynchroPhasor PMU" name="twitter:title" /><meta content="The GridTrak Open Source SynchroPhasor PMU Project provides resources that enable you to build your own SynchroPhasor sensor for use with the openPDC project, research, development, or electric grid observation." name="twitter:description" /><meta content="http://www.codeplex.com/Images/codeplex.png" name="twitter:image" /><meta content="CodePlex" property="og:site_name" /><meta content="http://gridtrak.codeplex.com/wikipage?title= GridTrak Open Source PMU Integration with openPDC&amp;ProjectName=gridtrak" property="og:url" /><meta content="object" property="og:type" /><meta content="Open Source SynchroPhasor PMU" property="og:title" /><meta content="The GridTrak Open Source SynchroPhasor PMU Project provides resources that enable you to build your own SynchroPhasor sensor for use with the openPDC project, research, development, or electric grid observation." property="og:description" /><meta content="http://www.codeplex.com/Images/codeplex.png" property="og:image" />
+        
+
+    </head>
+    
+    <body>
+        <script src="http://download-codeplex.sec.s-msft.com/scripts/v21031/i5/ScriptLoader.ashx" type="text/javascript"></script>
+        <form id="aspnetForm" autocomplete="off" method="POST" enctype="multipart/form-data">
+            <input name="__RequestVerificationToken" type="hidden" value="tzVTa265dqmHPbVqmKUf0R8aRdEn0C94kQk1s4DcxpUN3pG4HUiclIHfoa-k7lZqatJ_79sjrByoPbgwa8cgeyZB-WOhSpqzcgyKkYz-dDw-GIBDjMPgZHw3ly4puoKT5v3PkQ2" /><input name="__RequestVerificationToken2" type="hidden" value="__RequestVerificationToken2f290fa0d-1c88-4873-9659-65689046225b" />
+            
+            <div id="UpdateProgressPanel" class="loading_animation" style="display:none;">
+                <div class="row">
+                    <h2 class="anim_h2">
+                        <span id="UpdateProgressText">Updating...</span>
+                        <span id="animatedLoadingIconContainer">
+                            <img id="animatedLoadingIcon" src="http://download-codeplex.sec.s-msft.com/Images/v21031/loading_animation.gif" class="anim_img"/>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+            
+            <div style="display:none;">
+                
+                <img id="BlankImage" style="width:0;height:0;" src="http://download-codeplex.sec.s-msft.com/Images/v21031/blank.png" onload="self.logoImageLoaded=true;"/>
+
+                <script language="javascript" type="text/javascript">
+                    var date = new Date();
+                    var timezoneOffset = date.getTimezoneOffset() / 60 * -1;
+                    var timezoneOffsetCookie = getCookie("TimezoneOffset");
+                    var firstTimeSetTimezoneCookie = false;
+
+                    if (timezoneOffsetCookie == null || timezoneOffsetCookie != timezoneOffset) {
+                        firstTimeSetTimezoneCookie = true;
+                        document.cookie = "TimezoneOffset=" + timezoneOffset + '; domain=.codeplex.com;expires=Mon, 31 Oct 2016 15:50:03 UTC';
+                    }
+                </script>
+            </div>
+            
+            <div id="header">
+                <div id="header_wrap" class="row">
+                    <p id="logo"><a href="http://www.codeplex.com">Code<span class="semi">Plex</span></a><span id="tagline">Project Hosting for Open Source Software</span></p>
+                    
+
+<ul id="nav">
+
+    <li><a href="/site/register/new" id="registerLink" class="ZoomFix">Register</a></li>
+    <li ><a class="SignInLink" href="https://www.codeplex.com/site/login?RedirectUrl=http%3a%2f%2fgridtrak.codeplex.com%2fwikipage%3ftitle%3d%2520GridTrak%2520Open%2520Source%2520PMU%2520Integration%2520with%2520openPDC" id="signInLink">Sign In</a></li>
+  
+    <li class="last"><a class="rss_site_icon" href="http://www.codeplex.com/site/feeds/rss" type="application/rss+xml" rel="Alternate" title="CodePlex Site Activity"></a></li>
+</ul>
+                    <input id="searchsite" name="searchsite" maxlength="500" type="text" value="" /><span id="search_mag"><a id="submitSearch" name="submitSearch" class="magnify" title="Search" href="#"></a></span>
+                    <script>
+	$(document).ready(function() {
+    var searchButton = $('#submitSearch'),
+        searchBar = $('#searchsite');
+
+    // Register our own handler for the search event while we wait for the SearchBox script to load.
+    searchButton.bind('click.backupSearchBox', doProjectSearch);
+    searchBar.bind('keypress.backupSearchBox', function(e) { if ($keyCode(e) === 13) { doProjectSearch(); return false; } });
+
+    function cleanupSearchEvents() {
+        // If the SearchBox was loaded, unregister our handlers.
+        if (epx_loaded) {
+            searchButton.unbind('.backupSearchBox');
+            searchBar.unbind('.backupSearchBox');
+        }
+    }
+
+    $loadScript('http://i4.services.social.microsoft.com/search/Widgets/SearchBox.jss?appid=1000&scopeid=1&boxId=searchsite&btnId=submitSearch&watermark=Search%20all%20projects&overrideWatermark=true&searchLocation=%2fsite%2fsearch&allowEmptySearch=true&focusOnInit=False&minimumTermLength=3', cleanupSearchEvents);
+})
+function doProjectSearch() {
+    
+    var url = '/site/search';
+
+    //If search term is not same as watermark
+    if($('#searchsite').val() != 'Search all projects')    
+    {        
+        url = url + '?query=' + encodeURIComponent($('#searchsite').val());
+    }
+
+    
+    var callback = '';
+    if (callback.length > 0 && eval('typeof ' + callback) != 'undefined')
+        url += eval(callback + '()');
+
+    window.location.href = url;
+    return false;
+}
+</script>
+                </div>
+            </div>
+            
+            <div id="wrap">
+                
+    <div id="sub_heading" class="row">
+        
+        <div id="ProjectHeader">
+            <div id="project_title_row" class="row">
+                <div id="project_logo">
+                    
+    
+    <h1 class="text_only"><a href="http://gridtrak.codeplex.com/" id="ProjectTitle1"><div>Open Source SynchroPhasor PMU</div></a></h1>
+
+                </div>
+            </div>
+        </div>
+        
+        <div id="ProjectDetailsDiv">
+            
+        </div>
+		<div class="clear"></div>
+        
+
+<ul id="page_box_links">
+	<li id="homeTabCell" style="width: 63px;"><a id="homeTab" href="http://gridtrak.codeplex.com/" class="box_home">home</a><div></div></li>
+    
+	<li id="sourceTabCell" style="width:113px;"><a id="sourceTab" href="http://gridtrak.codeplex.com/SourceControl/latest" class="box_source">source code</a><div></div></li>
+    
+	<li id="releasesTabCell" style="width:105px;"><a id="releasesTab" href="http://gridtrak.codeplex.com/releases" class="box_downloads">downloads</a><div></div></li>
+    
+    <li id="documentationTabCell" style="width:143px;"><a id="documentationTab" href="http://gridtrak.codeplex.com/documentation" class="documentation_active">documentation</a><div></div></li>
+    
+	<li id="discussionTabCell" style="width:112px;"><a id="discussionTab" href="http://gridtrak.codeplex.com/discussions" class="box_discussions">discussions</a><div></div></li>
+    
+	<li id="workItemsTabCell" style="width:70px;"><a id="workItemsTab" href="http://gridtrak.codeplex.com/workitem/list/basic" class="box_issue">issues</a><div></div></li>
+    
+	<li id="peopleTabCell" style="width:70px;"><a id="peopleTab" href="http://gridtrak.codeplex.com/team/view" class="box_people">people</a><div></div></li>
+	<li id="licenseTabCell" style="width:70px;"><a id="licenseTab" href="http://gridtrak.codeplex.com/license" class="box_license">license</a><div></div></li>
+    
+    <span class="stretch"></span>
+</ul>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#page_box_links').applyLastClassToList();
+    });
+</script>
+		    <div class="clear"></div>
+            
+    <div id="DeleteWikiPagePanel" class="modal" style="display: none;">
+        <div class="row">
+            <h2>Are you Sure? <a href="javascript:return false;" class="close">X</a></h2>
+        </div>
+        <div class="modal_info">
+            By clicking Delete, all history, comments and attachments for this page will be deleted and cannot be restored.
+            <div class="modal_buttons">
+                <input type="button" id="CancelButton" class="cancel" value="Cancel" />
+                <input type="button" id="DeleteButton" class="ok" value="Delete" />
+            </div>
+            <div class="ClearBoth"></div>
+        </div>
+    </div>
+    
+    <div id="homepage_sub_menu">
+		<ul class="page_box_sublinks">
+            
+                <li><a id="pageInfoHyperLink" href="http://gridtrak.codeplex.com/wiki/PageInfo?title=%20GridTrak%20Open%20Source%20PMU%20Integration%20with%20openPDC" title="Page information for &#32;GridTrak&#32;Open&#32;Source&#32;PMU&#32;Integration&#32;with&#32;openPDC page.">Page Info</a></li>
+            
+            <li class="last"><a id="changesHyperlink" href="http://gridtrak.codeplex.com/wikipage/history" title="View change history for all pages.">Change History (all pages)</a></li>
+		</ul>
+        
+
+<div>
+    
+    <div id="actionBar" class="action_bar">
+        <ul id="actionBar_ul" class="actionBar_sublinks subtab_right" style="vertical-align: middle;">
+
+            
+
+                <li id="li_actionbar_followproject" data-action-id="actionbar_followproject" data-action-type="None" class="actionBar_sublinks" data-options-id="21037d67-710f-450c-a7c2-268b66011168">
+                
+                    <script class="options" defer="defer" id="21037d67-710f-450c-a7c2-268b66011168" type="application/json">{"projectName":"gridtrak","loggedInUser":"","returnUrl":"https://www.codeplex.com/site/login?RedirectUrl=http%3a%2f%2fgridtrak.codeplex.com%2fwikipage%3ftitle%3d%20GridTrak%20Open%20Source%20PMU%20Integration%20with%20openPDC%26ProjectName%3dgridtrak"}</script> 
+                    
+                    <div class="actionBar_custom_content"></div>
+
+                    <a href="#" id="actionbar_followproject" title="" class="action_bar_item_link">
+                        <img id="img_actionbar_followproject" class="action_bar_item_image" src="http://download-codeplex.sec.s-msft.com/Images/v21031/actionbar_follow.png" style="vertical-align: middle" />
+                        
+                    </a>
+
+                </li>
+
+            
+
+                <li id="li_actionbar_subscribe" data-action-id="actionbar_subscribe" data-action-type="PopUp" class="actionBar_sublinks" data-options-id="c85a1980-cd8b-4f9b-bc3e-165f1c590428">
+                
+                    <script class="options" defer="defer" id="c85a1980-cd8b-4f9b-bc3e-165f1c590428" type="application/json">{}</script> 
+                    
+                    <div class="actionBar_custom_content">
+
+<div id="rssHoverDiv" class="HoverPanel LeftHoverWidth" style="display: none">
+        <ul id="3_FeedsPanel" class="RssFeedsPanel">
+            <li>
+                <a id="ProjectRssLink" href="http://gridtrak.codeplex.com/project/feeds/rss" class="ArrowSmall NoUnderline">All Project Updates</a>
+            </li>
+            
+            <li>
+                <a id="DiscussionRssLink" href="http://gridtrak.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fforum%2fgridtrak" class="ArrowSmall NoUnderline">Discussions</a>
+            </li>
+            
+            <li>
+                <a id="IssueTrackerRssLink" href="http://gridtrak.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fworkitem%2fgridtrak" class="ArrowSmall NoUnderline">Issue Tracker</a>
+            </li>
+            
+            <li>
+                <a id="ReleasesRssLink" href="http://gridtrak.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2frelease%2fgridtrak" class="ArrowSmall NoUnderline">Downloads</a>
+            </li>
+            <li>
+                <a id="ReviewsRssLink" href="http://gridtrak.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2freview%2fgridtrak" class="ArrowSmall NoUnderline">Reviews</a>
+            </li>
+            
+            <li>
+                <a id="SourceControlRssLink" href="http://gridtrak.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fsourcecontrol%2fgridtrak" class="ArrowSmall NoUnderline">Source Code</a>
+            </li>
+            <li>
+                <a id="WikiRssLink" href="http://gridtrak.codeplex.com/project/feeds/rss?ProjectRSSFeed=codeplex%3a%2f%2fwiki%2fgridtrak" class="ArrowSmall NoUnderline">Wiki &amp; Documentation</a>
+            </li>
+        </ul>
+</div></div>
+
+                    <a href="#" id="actionbar_subscribe" title="Subscribe to project updates in RSS feeds." class="action_bar_item_link">
+                        <img id="img_actionbar_subscribe" class="action_bar_item_image" src="http://download-codeplex.sec.s-msft.com/Images/v21031/actionbar_subscribe.png" style="vertical-align: middle" />
+                        Subscribe
+                    </a>
+
+                </li>
+
+            
+        </ul>
+    </div>
+</div>
+        <div class="clear"></div>
+    </div>
+    
+        
+
+    </div>
+    
+    
+    
+<div id="left_column" class="no_border">
+    
+        <p id="breadcrumbs" style="margin-left: 10px">
+            
+                <a href="http://gridtrak.codeplex.com/documentation">Documentation</a>
+                
+                    <img src="http://download-codeplex.sec.s-msft.com/Images/v21031/arrow_sm.gif" alt="Go" style="margin-top: 5px" />
+                
+                <a href="http://gridtrak.codeplex.com/wikipage?title=%20GridTrak%20Open%20Source%20PMU%20Integration%20with%20openPDC"> GridTrak Open Source PMU Integration with openPDC</a>
+                
+        </p>
+    
+
+    <div class="WikiHolder">
+
+        
+            <div id="WikiContent" class="WikiContent">
+                
+<div class="wikidoc">
+<h1><span>GridTrak Open Source PMU Integration with openPDC</span></h1>
+<p><span>Part 1 - Setup openPDC and Connect the PMU Sensor to Collect Data</span></p>
+<p><span style="font-size:xx-small"><span style="color:#ff0000"><span style="font-size:x-small">Updated Mar 4, 2012, ajs</span></span></span><span style="font-size:x-small">&nbsp;</span></p>
+<h2><span>1.&nbsp; openPDC Installation</span></h2>
+<h3><span>Configuration Tested Platform <span>(others may also work)</span></span></h3>
+<ul>
+<li>Applies to openPDC v1.4 Release </li><li>SQL Server Express 2008 </li><li>Microsoft .NET Framework 4, Full Version </li><li>Windows 7 Professional/32, P4 (Hyper Threading enabled) 3 GHz, 1GB RAM, 250GB SATA HD, Ethernet
+</li><li>Serial Port (for GridTrak PMU sensor) </li><li>openPDC and PMU Connection Tester will be installed in folders outside of the Windows standard Program Files and Documents paths to avoid encountering issues with User specific privileges and Program Files virtual store.
+</li></ul>
+<h3><span>Downloading the openPDC Release Software</span></h3>
+<ul>
+<li>
+<div>Navigate to the openPDC project with the link: <a href="http://openpdc.codeplex.com" target="_blank">
+openPDC - The Open Source Phasor Data Concentrator</a></div>
+</li><li>Select the Downloads tab and download the <strong>openPDCSetup.zip</strong> file to a convenient folder. After you click on the
+<strong>openPDCSetup.zip</strong> link, you may be prompted to accept a license agreement. After accepting the license, a Save As style dialog is presented for you to select a folder and rename the file. For this document, we will save the file as
+<strong>C:\openPDC\Synchrophasor.Installs.zip</strong> and extract it into the <strong>
+C:\openPDC\Synchrophasor.Installs </strong>folder. The following is a screen shot of the results.
+</li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217534"><img title="Synchrophasor_Installs_ExtractedFolder" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217535" border="0" alt="Synchrophasor_Installs_ExtractedFolder" width="484" height="248" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>Reading the README.txt is a good idea. In this release, this tells us to simply extract the files as we have done and run the
+<strong>Setup.exe </strong>to install openPDC. </li></ul>
+<h3><span>Running openPDC Setup</span></h3>
+<ul>
+<li>Right-click on the <strong>Setup.exe</strong> program and select the <strong>
+Run as administrator</strong> option from the shortcut menu as illustrated in the following screen shot.
+</li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217536"><img title="Synchrophasor_Installs_RunAsAdministrator" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217537" border="0" alt="Synchrophasor_Installs_RunAsAdministrator" width="484" height="81" align="left" style="padding-left:0px; padding-right:0px; display:inline; float:left; padding-top:0px; border-width:0px"></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+<li>The following is a series of screen shots for a simple openPDC setup installing all the options.
+</li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217707"><img title="openPDC_Setup_1" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217708" border="0" alt="openPDC_Setup_1" width="244" height="196" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217709"><img title="openPDC_Setup_2" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217710" border="0" alt="openPDC_Setup_2" width="244" height="198" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217711"><img title="openPDC_Setup_3" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217712" border="0" alt="openPDC_Setup_3" width="244" height="198" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217713"><img title="openPDC_Setup_4" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217714" border="0" alt="openPDC_Setup_4" width="244" height="198" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>Using Windows 7 Professional, 32 bit operating system.&nbsp;&nbsp; Install the software to an easy to find and maintain stand-alone folder in drive C.&nbsp;&nbsp; Installing in &ldquo;Program Files&rdquo; may hide settings in virtual stores or in my &ldquo;Documents&rdquo;
+ space and may conflict with running openPDC as a service while not logged in. </li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217715"><img title="openPDC_Setup_5" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217716" border="0" alt="openPDC_Setup_5" width="244" height="198" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217717"><img title="openPDC_Setup_6" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217718" border="0" alt="openPDC_Setup_6" width="244" height="198" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217719"><img title="openPDC_Setup_7" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217720" border="0" alt="openPDC_Setup_7" width="244" height="198" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217721"><img title="openPDC_Setup_8" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217722" border="0" alt="openPDC_Setup_8" width="244" height="198" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>The <strong>Configuration Setup Utility</strong> automatically runs after the software is installed by
+<strong>Setup.exe</strong>.&nbsp; </li><li>Install a new &ldquo;<strong>openPDC</strong>&rdquo; database in the local SQL Server Express.
+</li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217723"><img title="openPDC_Config_Setup_9" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217724" border="0" alt="openPDC_Config_Setup_9" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217725"><img title="openPDC_Config_Setup_10" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217726" border="0" alt="openPDC_Config_Setup_10" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217727"><img title="openPDC_Config_Setup_11" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217728" border="0" alt="openPDC_Config_Setup_11" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217729"><img title="openPDC_Config_Setup_12" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217730" border="0" alt="openPDC_Config_Setup_12" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>Using Windows Integrated Authentication to connect to the local SQL Server Express database service.&nbsp; The openPDC v1.4.90.0 release does not completely implement this feature in the Configuration Setup Utility.&nbsp; As a work around, uncheck the &ldquo;Use
+ integrated security for openPDC Manager&rdquo; option, then add &ldquo;; Integrated Security=SSPI&rdquo; to the Advanced Settings Connection String property.
+</li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217731"><img title="openPDC_Config_Setup_13" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217732" border="0" alt="openPDC_Config_Setup_13" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217733"><img title="openPDC_Config_Setup_23f_SSPI" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217734" border="0" alt="openPDC_Config_Setup_23f_SSPI" width="417" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>Click the <strong>Test Connection</strong> button and verify that the database connection succeeds before continuing.
+</li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217735"><img title="openPDC_Config_Setup_15" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217736" border="0" alt="openPDC_Config_Setup_15" width="211" height="130" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>Use Windows Authentication for Account Credentials and optionally allow the credentials to be used by openPDC Manager.&nbsp; Also select running openPDC as a service.
+</li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217737"><img title="openPDC_Config_Setup_16" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217738" border="0" alt="openPDC_Config_Setup_16" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217739"><img title="openPDC_Config_Setup_17" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217740" border="0" alt="openPDC_Config_Setup_17" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>Use the Historian defaults </li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217741"><img title="openPDC_Config_Setup_18" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217742" border="0" alt="openPDC_Config_Setup_18" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217743"><img title="openPDC_Config_Setup_19" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217744" border="0" alt="openPDC_Config_Setup_19" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>The remaining setup process will check for and provide the option to erase a previous database, if there is one.
+</li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217745"><img title="openPDC_Config_Setup_20" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217746" border="0" alt="openPDC_Config_Setup_20" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217747"><img title="openPDC_Config_Setup_23g_SSPI_DatabaseExists" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217748" border="0" alt="openPDC_Config_Setup_23g_SSPI_DatabaseExists" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217749"><img title="openPDC_Config_Setup_21" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217750" border="0" alt="openPDC_Config_Setup_21" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217751"><img title="openPDC_Config_Setup_22" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217752" border="0" alt="openPDC_Config_Setup_22" width="244" height="207" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>Installing PMU Connection Tester is simple.&nbsp; Like openPDC, install PMU Connection Tester in its own folder outside of the scope of the &ldquo;Program Files&rdquo; and &ldquo;Documents&rdquo;.
+</li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217753"><img title="openPDC_ConnTester_Setup_24" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217754" border="0" alt="openPDC_ConnTester_Setup_24" width="244" height="198" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217755"><img title="openPDC_ConnTester_Setup_25" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217756" border="0" alt="openPDC_ConnTester_Setup_25" width="244" height="198" style="margin:0px; padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217757"><img title="openPDC_ConnTester_Setup_26" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217758" border="0" alt="openPDC_ConnTester_Setup_26" width="244" height="198" style="margin:0px; padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217759"><img title="openPDC_ConnTester_Setup_28" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=217760" border="0" alt="openPDC_ConnTester_Setup_28" width="244" height="198" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<hr>
+<h2><span>2. Verify Sensor Communications with PMU Connection Tester</span></h2>
+<ul>
+<li>Run PMU Connection Tester </li><li>Configure the <strong>Connection Parameters, Serial</strong> tab settings for the COM port, Baud Rate = 11520, Parity = None, Stop Bits = One, Data Bits = 8, DTR and RTS unchecked.
+</li><li>Configure the <strong>Protocol</strong> tab setting for <strong>IEEE C37.118-2005</strong>
+</li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219027"><img title="PmuConnTester_1" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219028" border="0" alt="PmuConnTester_1" width="244" height="219" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>Below the <strong>Graph </strong>select the <strong>Settings </strong>tab </li><li>In the <strong>Application Settings </strong>section set <strong>MinimumFrameDisplayBytes</strong>&nbsp; to
+<strong>512</strong> </li><li>In the <strong>Connection Settings </strong>section set <strong>AutoStartDataParsingSequence
+</strong>to <strong>False</strong> </li><li>In the <strong>Phase Angle Graph</strong> section set <strong>PhaseAngleGraphStyle
+</strong>to <strong>Raw</strong> </li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219029"><img title="PmuConnTester_2" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219030" border="0" alt="PmuConnTester_2" width="244" height="219" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><img src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=347179" alt="PMUConnTester_2a" width="244" height="219"></p>
+<ul>
+<li>In the <strong>Protocol</strong> click the <strong>Connect</strong> button </li><li>Select the <strong>Command:&nbsp; Send Header Frame </strong>then click the <strong>
+Send </strong>button </li><li>Select the <strong>Command:&nbsp; Send Config Frame 1&nbsp; </strong>then click the
+<strong>Send </strong>button </li><li>Select the <strong>Command:&nbsp; Send Config Frame 2&nbsp; </strong>then click the
+<strong>Send </strong>button </li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219031"><img title="PmuConnTester_3" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219032" border="0" alt="PmuConnTester_3" width="244" height="219" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219033"><img title="PmuConnTester_4" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219034" border="0" alt="PmuConnTester_4" width="244" height="219" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219035"><img title="PmuConnTester_5" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219036" border="0" alt="PmuConnTester_5" width="244" height="219" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>Select the <strong>Command:&nbsp; Enable Real-time Data</strong>&nbsp; then click the
+<strong>Send </strong>button </li><li>To increase the sample density in the chart, increase the settings for <strong>
+FrequencyPointsToPlot </strong>and <strong>PhaseAnglePointsToPlot</strong>&nbsp; </li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219037"><img title="PmuConnTester_6" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219038" border="0" alt="PmuConnTester_6" width="244" height="219" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<hr>
+<h2><span>3.&nbsp; Configure Your Company, Vendor, and Vendor Device in openPDC Manager</span></h2>
+<p>openPDC comes preloaded with Company, Vendor, and Device records.&nbsp; However, if your Company, Vendor, and Device is not included in these, it is a good idea to add your own records to the openPDC.&nbsp; If you are new to openPDC, entering this information
+ is a simple introduction to the look and feel of using the openPDC Manager.</p>
+<ul>
+<li>Run the openPDC Manager and select <strong>Manage </strong>menu and click the
+<strong>Companies </strong>option.
+<ul>
+<li>Click the <strong>Clear </strong>button to setup a new blank <strong>Company</strong> record.
+</li><li>Enter your <strong>Company</strong> information then click the <strong>Save</strong> button.
+</li></ul>
+</li></ul>
+<p><img src="http://download.codeplex.com/Download?ProjectName=gridtrak&DownloadId=350202" alt="" width="404" height="384">&nbsp;<img src="http://download.codeplex.com/Download?ProjectName=gridtrak&DownloadId=350203" alt="" width="404" height="384">&nbsp;</p>
+<ul>
+<li>Select the <strong>Manager </strong>menu, <strong>Vendors </strong>option
+<ul>
+<li>Click the <strong>Clear </strong>button to setup a new blank <strong>Vendor </strong>
+record. </li><li>Enter your <strong>Vendor</strong> information then click the <strong>Save</strong> button.
+</li></ul>
+</li></ul>
+<p><img src="http://download.codeplex.com/Download?ProjectName=gridtrak&DownloadId=350204" alt="" width="404" height="384">&nbsp;</p>
+<ul>
+<li>Select the <strong>Manager </strong>menu, <strong>Vendor Devices </strong>option
+<ul>
+<li>Click the <strong>Clear </strong>button to setup a new blank <strong>Vendor Device
+</strong>record. </li><li>Enter your <strong>Vendor Device</strong> information then click the <strong>
+Save</strong> button. </li></ul>
+</li></ul>
+<p><img src="http://download.codeplex.com/Download?ProjectName=gridtrak&DownloadId=350205" alt="" width="404" height="384">&nbsp;</p>
+<hr>
+<h2><span>4.&nbsp; Configure the Sensor as a New Device in openPDC Manager</span></h2>
+<ul>
+<li>If PMU Connection Tester is Connected, click the <strong>Disconnect </strong>
+button in the <strong>Protocol </strong>tab.&nbsp; The PC&rsquo;s Serial Port can only be used by one application at any time.
+</li><li>Run <strong>openPDC Manager </strong>and select the <strong>Add New </strong>
+option from the <strong>Devices </strong>menu. </li></ul>
+<p><img src="http://download.codeplex.com/Download?ProjectName=gridtrak&DownloadId=350206" alt="" width="213" height="144"></p>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=350206" target="_blank"></a></p>
+<ul>
+<li>Click the <strong>Build </strong>link to the right of the <strong>Connection String
+</strong>field. </li><li>In the <strong>Build Connection String </strong>dialog&rsquo;s <strong>Serial
+</strong>tab, select the COM Port and set the other parameters to Baud Rate = 11520, Parity = None, Stop Bits = One, Data.&nbsp; Be sure to set the
+<strong>Stop Bits </strong>to <strong>One</strong> because this is not the default in this dialog.
+</li></ul>
+<p><img src="http://download.codeplex.com/Download?ProjectName=gridtrak&DownloadId=350207" alt="" width="404" height="320"></p>
+<p style="padding-left:60px"><strong>port=COM7; baudrate=115200; parity=None; stopbits=One; databits=8; dtrenable=false; rtsenable=false; transportprotocol=serial; interface=0.0.0.0;</strong></p>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219044"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219046"></a></p>
+<ul>
+<li>Click the <strong>Next </strong>button at the bottom right of the screen </li><li>Click the <strong>Request Configuration From openPDC </strong>button to get the read the configuration from the sensor using IEEE C37.118-2005 protocol.
+</li><li>Select your <strong>Company</strong> </li><li>Select the <strong>Interconnection </strong>that the sensor will be recording data for.
+</li></ul>
+<p><img src="http://download.codeplex.com/Download?ProjectName=gridtrak&DownloadId=350210" alt="" width="404" height="320"></p>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219050"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219071"></a></p>
+<ul>
+<li>Click the <strong>Modify Configuration </strong>button to review the configuration retrieved from the sensor.&nbsp; Close the dialog by clicking its
+<strong>Save</strong> button. </li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219052"><img title="openPDC_Manager_5" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219053" border="0" alt="openPDC_Manager_5" width="404" height="171" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>I noticed a <strong>Save Configuration </strong>button near the <strong>Modify Configuration
+</strong>button in the wizard&rsquo;s Step 2 screen.&nbsp; When I clicked this and saved the configuration to an XML file, I got the following Error.&nbsp; I didn&rsquo;t click this button in previous tests, so this error may not be a problem for this exercise.&nbsp;
+ I will report it in the Issue Tracker. </li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219054"><img title="openPDC_Manager_5_OnSaveButton_Error" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219055" border="0" alt="openPDC_Manager_5_OnSaveButton_Error" width="404" height="201" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>Click the <strong>Next </strong>button at the bottom right of the <strong>Device Configuration Wizard
+</strong>screen to continue to Step 3. </li><li>Select your <strong>Vendor </strong><strong>Device</strong> </li><li>Enter your <strong>Longitude and Latitude</strong> </li><li>Review the information and click the <strong>Finish </strong>button. </li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219073"><img title="openPDC_Manager_6" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219074" border="0" alt="openPDC_Manager_6" width="404" height="326" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219075"><img title="openPDC_Manager_7" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219076" border="0" alt="openPDC_Manager_7" width="404" height="326" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>In the <strong>Devices </strong>menu, click the <strong>Browse </strong>option
+</li><li>Click the <strong>Acronym </strong>link and update the <strong>Time Zone </strong>
+property </li><li>Make sure the <strong>ID Code (AccessID) </strong>is set to the Sensor&rsquo;s ID , then click the
+<strong>Save </strong>button. </li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219078"><img title="openPDC_Manager_8" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219079" border="0" alt="openPDC_Manager_8" width="404" height="326" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219088"><img title="openPDC_Manager_11" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219089" border="0" alt="openPDC_Manager_11" width="404" height="326" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>After the <strong>Save</strong>, you are returned to the devices browser.&nbsp; Click the
+<strong>Acronym </strong>link for the sensor again. </li><li>In the <strong>Manage Devices </strong>screen, click the <strong>Initialize </strong>
+link, then click <strong>Yes </strong>to initialize the sensor. </li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219090"><img title="openPDC_Manager_12" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219091" border="0" alt="openPDC_Manager_12" width="404" height="326" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219092"><img title="openPDC_Manager_12a" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219093" border="0" alt="openPDC_Manager_12a" width="404" height="326" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>In the <strong>Monitoring </strong>menu, select the <strong>System Console </strong>
+option and scroll back to verify that the sensor was initialized. </li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219230"><img title="openPDC_Manager_14" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219231" border="0" alt="openPDC_Manager_14" width="404" height="326" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>Try the <strong>Home </strong>and <strong>Monitoring, Input Status &amp; Monitoring</strong>
+</li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219232"><img title="openPDC_Manager_15" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219233" border="0" alt="openPDC_Manager_15" width="404" height="326" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219234"><img title="openPDC_Manager_16" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219235" border="0" alt="openPDC_Manager_16" width="404" height="326" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+<ul>
+<li>The <strong>Manage </strong>menu, <strong>System Settings </strong>option provides settings for adjusting the chart.
+</li></ul>
+<p><a href="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219722"><img title="openPDC_Manager_SystemSettings" src="http://download.codeplex.com/download?ProjectName=gridtrak&DownloadId=219723" border="0" alt="openPDC_Manager_SystemSettings" width="404" height="349" style="padding-left:0px; padding-right:0px; display:inline; padding-top:0px; border-width:0px"></a></p>
+</div>
+<div></div>
+
+            </div>
+        
+                <p>Last edited <span class="smartDate" title="3/5/2012 2:12:29 AM" LocalTimeTicks="1330942349">Mar 5, 2012 at 2:12 AM</span> by <a id="wikiEditByLink" href="http://www.codeplex.com/site/users/view/ajstadlin">ajstadlin</a>, version 32</p>
+            
+                <div id="Comments">
+                    
+
+<script type="text/javascript">
+    var commentCount = 0;
+    function addComment() {
+        var input = $('#Comment');
+        input.val($.trim(input.val()));
+        if (MvcValidation_Validate('AddComment')) {
+            CodePlex.UpdateProgress.show();
+            $.post('http://gridtrak.codeplex.com/wikipage/comment', { Comment: input.val(), title: $('#WikiTitle').val() }, function(data, textStatus) {
+                if (textStatus == 'success') {
+                    if(commentCount++ == 0)
+                        $('#wikiCommentsEmpty').empty();
+                    $('#wikiComments').append(data);
+                    input.val('');
+                }
+                CodePlex.UpdateProgress.hide();
+            });
+        }
+    }
+    function deleteComment(id) {
+        if (confirm('Are you sure you want to delete this comment?')) {
+            CodePlex.UpdateProgress.show();
+            $.ajax({
+                type: 'DELETE',
+                url: 'http://gridtrak.codeplex.com/wikipage/comment' + '/' + id,
+                success: function() {
+                    $('#comment' + id).empty();
+                    CodePlex.UpdateProgress.hide();
+                },
+                error: function() { CodePlex.UpdateProgress.hide(); }
+            });
+        }
+    }
+</script>
+
+<div id="CommentsAnchor">
+    <h2>Comments</h2>
+    <div id="wikiComments">
+        
+            <div id="wikiCommentsEmpty">No comments yet.<br /><br /></div>
+        
+    </div>
+    
+        <div id="addComment">
+            <a id="SignInToAddCommentLink" href="https://www.codeplex.com/site/login?RedirectUrl=http%3a%2f%2fgridtrak.codeplex.com%2fwikipage%3ftitle%3d%2520GridTrak%2520Open%2520Source%2520PMU%2520Integration%2520with%2520openPDC%26FocusElement%3dComment">Sign in to add a comment</a>
+        </div>
+    
+</div>
+                </div>
+            
+    </div>
+    
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#deleteWikiHyperLink').click(function () {
+                OpenDialog('#DeleteWikiPagePanel', true, '30em');
+            });
+            $('#DeleteButton').click(function () {
+                OpenDialog('#DeleteWikiPagePanel', false);
+                CodePlex.UpdateProgress.show();
+                $.ajax({
+                    type: 'DELETE',
+                    url: 'http://gridtrak.codeplex.com/wikipage?title=%20GridTrak%20Open%20Source%20PMU%20Integration%20with%20openPDC',
+                    data: {title: $('#WikiTitle').val()},
+                    success: function (data) {
+                        CodePlex.UpdateProgress.hide();
+                        window.location = data;
+                    },
+                    error: function (data) {
+                        CodePlex.UpdateProgress.hide();
+                    }
+                });
+            });
+            $('#CancelButton').click(function () {
+                OpenDialog('#DeleteWikiPagePanel', false);
+            });
+            
+            
+        });
+    </script>
+</div>
+
+        
+	<div id="right_sidebar">
+        
+
+<input name="" type="text" maxlength="500" id="wiki_search" title="Search Wiki and Documentation"/><a id="SearchButton" class="wiki_magnify" href="#" title="Search Wiki and Documentation"></a>
+
+<script type="text/javascript">
+
+    $(function () {
+
+        $('#wiki_search').keypress(function (e) {
+            if (e.keyCode == 13) {
+                wikiSearch();
+                return false;
+            }
+        });
+
+        $('#SearchButton').click(function () {
+            wikiSearch();
+            return false;
+        });
+
+        $('#wiki_search').promptBox('Search Wiki & Documentation');
+
+    });
+    function setWikiCommentTextBoxFocus() {
+        $('#Comment').focus();
+        return false;
+    }
+
+    function wikiSearch() {
+        var $textbox = $('#wiki_search');
+        if($textbox.attr('dirty') != 'true')
+            return;
+        var searchText = encodeURIComponent(jQuery.trim($textbox.val()));
+        if(searchText != null & searchText.length > 0)
+            window.location.href = 'http://gridtrak.codeplex.com/wiki/search?tab=Documentation&SearchText=' + searchText;
+    }
+
+</script>
+
+<script type="text/javascript">
+    var requirementsActionUri = 'http://gridtrak.codeplex.com/documentation/requirements';
+    var requirementsToDelete = [];
+    
+    
+
+    function LoadRequirements(json) {
+        var html = '';
+        if (json === undefined || !json.length) {
+            html = '<div id="NoRequirementsDefined">There are currently no defined requirements.</div>';
+        } else {
+            for (var i = 0; i < json.length; i++) {
+               var requirementType = json[i];
+                html += '<h3>' + requirementType.Caption + '</h3><ul>';
+                for (var j = 0; j < requirementType.Requirements.length; j++) {
+                    var requirement = requirementType.Requirements[j];
+                    html += '<li>' + requirement.DisplayTitle + '</li>';
+                }
+                html += '</ul>';
+            }
+        }
+        
+        $('#RequirementsBody').html(html);
+    }
+
+    $(document).ready(function() {
+        LoadRequirements([{"Caption":"For Use","Type":"Use","Requirements":[{"Id":7395,"Title":"GTosPMU Model A or PHzMonitor Model 10","DisplayTitle":"GTosPMU Model A or PHzMonitor Model 10"},{"Id":7396,"Title":"Host PC with RS232 or Serial to USB input","DisplayTitle":"Host PC with RS232 or Serial to USB input"},{"Id":9523,"Title":"openPDC v1.4 or Later","DisplayTitle":"openPDC v1.4 or Later"},{"Id":9524,"Title":"or other IEEE C37.118-2005 software ","DisplayTitle":"or other IEEE C37.118-2005 software "}]}]);
+    });
+</script>
+
+<div id="RequirementsContainer">
+    <h2>
+        System Requirements
+        
+    </h2>
+    <div class="clear"></div>
+    <div id="RequirementsBody"></div>
+</div>
+
+
+    </div>
+
+        
+                
+                <div class="clear"></div>
+                
+                <div id="footer">
+                    <div class="row">
+                        <hr />
+                        <ul>
+                            <li>© 2006-2015 Microsoft</li>
+                            <li><a href="http://www.codeplex.com/site/help">Get Help</a></li>
+                            <li><a href="/site/legal/privacy">Privacy Statement</a></li>
+                            <li><a href="http://www.codeplex.com/site/legal/terms">Terms of Use</a></li>
+                            <li><a href="http://www.codeplex.com/site/legal/conduct">Code of Conduct</a></li>
+                            <li><a href="http://developermedia.com/" target="_blank">Advertise With Us</a></li>
+                            <li>Version 8.21.2015.21031</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+
+</html>
