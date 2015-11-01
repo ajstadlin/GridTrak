@@ -16,8 +16,6 @@
 </div>
 <hr />
 <!--/HtmlToGmd.Body-->
-
-
 <div class="WikiContent">
 <div class="wikidoc">
 <p><strong>Project Description</strong> <br>
@@ -71,13 +69,11 @@ Open Source PMU (GTosPMU)</a></h1>
 </table>
 </div>
 </div>
-
 <hr />
 <div class="footer">
 Last edited <span class="smartDate" title="4/25/2012 3:57:56 AM" LocalTimeTicks="1335351476">Apr 25, 2012 at 3:57 AM</span> by <a id="wikiEditByLink" href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a>, version 46<br />
 <!--HtmlToGmd.Migration-->Migrated from <a href="http://gridtrak.codeplex.com">CodePlex</a> Oct 30, 2015 by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajs</a><!--/HtmlToGmd.Migration-->
 </div>
-
 <!--HtmlToGmd.Foot-->
 <div id="copyright">
 <hr />
