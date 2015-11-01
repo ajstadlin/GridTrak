@@ -20,7 +20,7 @@
 <div class="WikiContent">
 <div class="wikidoc">
 <h1><span>GridTrak Open Source PMU Integration with openPDC</span></h1>
-<p><span>Part 1 - Setup openPDC and Connect the PMU Sensor to Collect Data</span></p>
+<h3><span>Part 1 - Setup openPDC and Connect the PMU Sensor to Collect Data</span></h3>
 <p><span style="font-size:xx-small"><span style="color:#ff0000"><span style="font-size:x-small">Updated Mar 4, 2012, ajs</span></span></span><span style="font-size:x-small">&nbsp;</span></p>
 <h2><span>1.&nbsp; openPDC Installation</span></h2>
 <h3><span>Configuration Tested Platform <span>(others may also work)</span></span></h3>
