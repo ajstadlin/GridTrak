@@ -23,7 +23,7 @@
 <h1 class="user_name" style="display: inline">ajstadlin</h1>
 <h3>personal statement</h3>
 <div class="wikidoc">I am a full time information systems engineer and electronics technology student.  My personal independent project is to design and produce an inexpensive Open Source SynchroPhasor PMU sensor for research, development, and integration with <a href="https://github.com/GridProtectionAlliance/openPDC">openPDC - the Open Source Phasor Data Concentrator</a>.<br /><br />As of November, 2015, the GridTrak Open Source PMU (GTosPMU) kits are deprecated.  See the <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Open_Source_PMU_-GTosPMU-.md" rel="nofollow">GridTrak Open Source PMU Project</a>.  <br /><br />For more information about GridTrak Open Source PMU kit details or to purchase kits or assembled sensors, contact me @gridtrak.com.<br />//AJ</br>
--.- -.-. ...-- ..-. ..- .--.
+.-- ...-- .--. -- ..-
 </div>
 
 <!--HtmlToGmd.Foot-->
