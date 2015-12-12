@@ -17,29 +17,28 @@
 <hr />
 <!--/HtmlToGmd.Body-->
 <div class="WikiContent">
-<h1>Spikes in Phase Chart in GPS Integrated Mode</h1>
+<h1>Errors in Calculations when Measure at 30 Samples per Second</h1>
 <h3>DESCRIPTION</h3>
-Attached is a screen shot showing spikes in the Phase Chart line while operating the sensor in GPS Integrated mode.
+There are calculation errors in the algorithm when making measurements at rates of 30 samples per second or faster. These appear mostly around the +/- 180 degrees phase angles. There are errors in the Phase and Frequency measurements at 30 fps or faster.<br />  
+Until this issue is resolved, the GTosPMU sensor is only reliable at 20 samples per second or slower.
 <h3>FILE ATTACHMENTS</h3>
-Spikes in Phase Chart</br>
-<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/Spikes_In_Phase_Chart.png" alt="Spikes_In_Phase_Chart.png" /></br>
-&nbsp;</br>
-No Spikes in Phase Chart</br>
-<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/No_Spikes_In_Phase_Chart.png" alt="No_Spikes_In_Phase_Chart.png" /></br>
-<h3>COMMENTS</h3>
-If the PMU is running in self timer and host synchronized mode, the spikes are not in the Phase Chart. The second attachment shows the PMU running with GPS Time and PPS disabled.
+Calc Errors at 30 Samples per Second displayed in GridTrak PMU Software<br />
+<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/CalcErrors_30sps_Test_09.png" alt="CalcErrors_30sps_Test_09.png" /><br />
+&nbsp;<br />
+Calc Errors at 30 Samples per Second displayed in openPDC<br />
+<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/CalcErrors_30sps_OpenPDC.png" alt="CalcErrors_30sps_OpenPDC.png" /><br />
 <h3>STATUS</h3>
 <ul>
 <li>Component:  PMU Firmware</li>
-<li>Impact:  High</li>
+<li>Impact:  Low</li>
 <li>Status:  Issue, Proposed</li>
 </ul>
 </div>
 <hr />
 <div class="footer">
 Updated Feb 13, 2013 at 8:07 PM by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><br />
-Reported Apr 24, 2012 at 11:50 PM by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><br />
-<!--HtmlToGmd.Migration-->Migrated from <a href="http://gridtrak.codeplex.com/workitem/10122">CodePlex Issue #10122</a> Dec 11, 2015 by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><!--/HtmlToGmd.Migration-->
+Reported Apr 29, 2011 at 8:32 PM by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><br />
+<!--HtmlToGmd.Migration-->Migrated from <a href="http://gridtrak.codeplex.com/workitem/8557">CodePlex Issue #8557</a> Dec 11, 2015 by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><!--/HtmlToGmd.Migration-->
 </div>
 <!--HtmlToGmd.Foot-->
 <div id="copyright">

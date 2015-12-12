@@ -17,29 +17,22 @@
 <hr />
 <!--/HtmlToGmd.Body-->
 <div class="WikiContent">
-<h1>Spikes in Phase Chart in GPS Integrated Mode</h1>
+<h1>Task: Implement IEEE C37.118.2-2011</h1>
 <h3>DESCRIPTION</h3>
-Attached is a screen shot showing spikes in the Phase Chart line while operating the sensor in GPS Integrated mode.
-<h3>FILE ATTACHMENTS</h3>
-Spikes in Phase Chart</br>
-<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/Spikes_In_Phase_Chart.png" alt="Spikes_In_Phase_Chart.png" /></br>
-&nbsp;</br>
-No Spikes in Phase Chart</br>
-<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/No_Spikes_In_Phase_Chart.png" alt="No_Spikes_In_Phase_Chart.png" /></br>
-<h3>COMMENTS</h3>
-If the PMU is running in self timer and host synchronized mode, the spikes are not in the Phase Chart. The second attachment shows the PMU running with GPS Time and PPS disabled.
+Work in Progress - Update the GridTrak PMU firmware to comply with IEEE C37.118.2-2011 Standard for Synchrophasor Data Transfer for Power Systems (Dec 28, 2011).<br />
+Comments and suggestions welcome!
 <h3>STATUS</h3>
 <ul>
 <li>Component:  PMU Firmware</li>
-<li>Impact:  High</li>
-<li>Status:  Issue, Proposed</li>
+<li>Impact:  Medium</li>
+<li>Status:  Task, Active</li>
 </ul>
 </div>
 <hr />
 <div class="footer">
 Updated Feb 13, 2013 at 8:07 PM by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><br />
-Reported Apr 24, 2012 at 11:50 PM by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><br />
-<!--HtmlToGmd.Migration-->Migrated from <a href="http://gridtrak.codeplex.com/workitem/10122">CodePlex Issue #10122</a> Dec 11, 2015 by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><!--/HtmlToGmd.Migration-->
+Reported Mar 25, 2012 at 12:26 AM by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><br />
+<!--HtmlToGmd.Migration-->Migrated from <a href="http://gridtrak.codeplex.com/workitem/10069">CodePlex Issue #10069</a> Dec 11, 2015 by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><!--/HtmlToGmd.Migration-->
 </div>
 <!--HtmlToGmd.Foot-->
 <div id="copyright">
