@@ -35,7 +35,8 @@ The noise can be filtered out using a 1.0uF bypass capacitor between the PPS and
 Note the spikes that are similar to the spikes observed when oscilloscope probes are attached to the PPS. The random spikes are preferable to the noise without the bypass capacitor. Since spikes are not desireable, the noise issue can be closed, but the spikes in a different issue still needs work.
 &nbsp;<br />
 ajstadlin wrote Apr 29, 2011 at 7:57 PM <br />
-Correction to last comment. The spikes occur when probes are Not Attached.  http://gtospmu.codeplex.com/workitem/8423
+Correction to last comment. The spikes occur when probes are Not Attached. <br />
+https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/Issue_codeplex_008423.md
 <h3>STATUS</h3>
 <ul>
 <li>Component:  PMU Firmware</li>
