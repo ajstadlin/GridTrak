@@ -21,11 +21,11 @@
 <h3>DESCRIPTION</h3>
 Attached is a screen shot showing spikes in the Phase Chart line while operating the sensor in GPS Integrated mode.
 <h3>FILE ATTACHMENTS</h3>
-Spikes in Phase Chart</br>
-<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/Spikes_In_Phase_Chart.png" alt="Spikes_In_Phase_Chart.png" /></br>
-&nbsp;</br>
-No Spikes in Phase Chart</br>
-<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/No_Spikes_In_Phase_Chart.png" alt="No_Spikes_In_Phase_Chart.png" /></br>
+Spikes in Phase Chart<br />
+<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/Spikes_In_Phase_Chart.png" alt="Spikes_In_Phase_Chart.png" /><br />
+&nbsp;<br />
+No Spikes in Phase Chart<br />
+<img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/No_Spikes_In_Phase_Chart.png" alt="No_Spikes_In_Phase_Chart.png" /><br />
 <h3>COMMENTS</h3>
 If the PMU is running in self timer and host synchronized mode, the spikes are not in the Phase Chart. The second attachment shows the PMU running with GPS Time and PPS disabled.
 <h3>STATUS</h3>

@@ -26,8 +26,8 @@ http://www.youtube.com/watch?v=lYY68KGMYJ4&feature=youtu.be<br />
 Possibly Related: GPS sync mode with PPS disabled does not work.<br />
 Host sync mode without PPS appears to work reliably.
 <h3>FILE ATTACHMENTS</h3>
-<b>Closed Dec 6, 2014 at 10:07 PM by ajstadlin</b><br />
-Fixed by May 14, 2013 FW Ver 090C.0 - Error Handler ISRs removed.<br />
+ajstadlin wrote May 13, 2013 at 1:01 PM <br />
+PPS Test using Oscilloscope photo attached
 <img src="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/PPS_Test_OK.jpg" alt="PPS_Test_OK.jpg" /><br />
 <h3>COMMENTS</h3>
 ajstadlin wrote May 13, 2013 at 12:37 PM <br />
@@ -40,9 +40,9 @@ Tested:<br />
 &nbsp;<br />
  This problem is most likely a firmware bug.<br />
 &nbsp;<br />
-ajstadlin wrote May 13, 2013 at 1:01 PM <br />
-&nbsp;<br />
-PPS Test using Oscilloscope photo attached<h3>STATUS</h3>
+<b>Closed Dec 6, 2014 at 10:07 PM by ajstadlin</b><br />
+Fixed by May 14, 2013 FW Ver 090C.0 - Error Handler ISRs removed.<br />
+<h3>STATUS</h3>
 <ul>
 <li>Component:  PMU Firmware</li>
 <li>Impact:  High</li>
