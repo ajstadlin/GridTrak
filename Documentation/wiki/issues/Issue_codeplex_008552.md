@@ -48,7 +48,7 @@ https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/issues/Issu
 <div class="footer">
 Closed  Apr 29, 2011 at 7:52 PM by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><br />
 Updated  May 16, 2013 at 2:56 AM by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><br />
-Reported  Apr 28, 2011 at 9:44 PM at 1:20 AM by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><br />
+Reported  Apr 28, 2011 at 9:44 PM by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><br />
 <!--HtmlToGmd.Migration-->Migrated from <a href="http://gridtrak.codeplex.com/workitem/8552">CodePlex Issue #8552</a> Dec 12, 2015 by <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/Contributors/ajstadlin.md">ajstadlin</a><!--/HtmlToGmd.Migration-->
 </div>
 <!--HtmlToGmd.Foot-->
