@@ -18,6 +18,9 @@
 <!--/HtmlToGmd.Body-->
 <div class="WikiContent">
 <div class="wikidoc">
+ <p><strong>GTosPMU End of Life Notice - Sep 10, 2019</strong> <br>
+The GridTrak PMU concepts are still functional and repeatable. Unfortunately, the GPS used for this project is no longer supported by its manufacturer. It is still possible to find suppliers for all of the components and build the GTosPMU sensor and program its firmware for anyone wanting to test the concepts. However, the advances and lower cost for single board computers with their extra features and accessories make them a practical alternative for experimenting with synchrophasor measurement.</p>
+ <hr />
 <p><strong>Project Description</strong> <br>
 The Open Source SynchroPhasor PMU Project provides resources that enable you to build your own SynchroPhasor measuring sensors for use with the openPDC project, research, development, or electric grid observation.</p>
 <h1>Open Source SynchroPhasor PMU Project</h1>
@@ -25,7 +28,7 @@ The Open Source SynchroPhasor PMU Project provides resources that enable you to 
 <li>Open source resources enable you to construct your own PMU for research, experimentation, development, or fun. The information provided here is intended to be reproducible, repeatable, and reusable in your own projects.
 </li><li>The open source resources hosted here can be used with the openPDC - Open Source Phasor Data Concentrator project software.
 </li></ul>
-<hr>
+<hr />
 <h1>GridTrak - <a href="https://github.com/ajstadlin/GridTrak/blob/master/Documentation/wiki/GridTrak_Open_Source_PMU_-GTosPMU-.md">Open Source PMU (GTosPMU)</a></h1>
 <h3>How GridTrak Open Source PMU (GTosPMU) Works:</h3>
 <p>The GridTrak PMU is a hardware sensor designed to measure and transmit AC SynchroPhasor Frequency, Phase Angle, and Magnitude digitally by:</p>
