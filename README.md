@@ -19,7 +19,7 @@
 <div class="WikiContent">
 <div class="wikidoc">
  <p><strong>GTosPMU End of Life Notice - Sep 10, 2019</strong> <br>
-The GridTrak PMU concepts are still functional and repeatable. Unfortunately, the GPS used for this project is no longer supported by its manufacturer. It is still possible to find suppliers for all of the components and build the GTosPMU sensor and program its firmware for anyone wanting to test the concepts. However, the advances and lower cost for single board computers with their extra features and accessories make them a practical alternative for experimenting with synchrophasor measurement.</p>
+The GridTrak PMU concepts are still functional and repeatable. It appears to be still possible to find suppliers for all of the components and build the GTosPMU sensor and program its firmware for anyone wanting to test the concepts. However, the advances and lower cost for single board computers with their extra features and accessories make them a practical alternative for experimenting with synchrophasor measurement.</p>
  <hr />
 <p><strong>Project Description</strong> <br>
 The Open Source SynchroPhasor PMU Project provides resources that enable you to build your own SynchroPhasor measuring sensors for use with the openPDC project, research, development, or electric grid observation.</p>
